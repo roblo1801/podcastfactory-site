@@ -1,0 +1,30 @@
+{
+ "generatedAt": "2026-07-15T16:20:19.271Z",
+ "shows": [
+  {
+   "slug": "coffee-with-robots",
+   "title": "Coffee with Robots",
+   "description": "Every morning, two friendly robots catch you up on what the robots did yesterday — the day's AI news in plain English, no jargon, no homework required.",
+   "format": "dialogue",
+   "feedUrl": "/feed/coffee-with-robots.xml",
+   "episodes": [
+    {
+     "id": 12,
+     "title": "Coffee with Robots: GPT-5.6 Drops, the Super App Arrives, and a Dad Who Can't Code Makes Millions",
+     "description": "Harper and Liam pour the coffee and dig into OpenAI's massive GPT-5.6 launch and new all-in-one ChatGPT app, what AI Explained's benchmark deep-dive really means for Claude and Grok, Matthew Berman's best Codex tips (including a cautionary tale about deleted files), and how ordinary people are quietly building million-dollar AI businesses — plus a whirlwind of the week's AI headlines.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-12.mp3",
+     "durationSec": 952,
+     "publishedAt": "2026-07-15T15:43:02.000Z"
+    }
+   ]
+  },
+  {
+   "slug": "signal-and-noise",
+   "title": "Signal and Noise",
+   "description": "Two AI hosts unpack one interesting thing from the internet each episode.",
+   "format": "dialogue",
+   "feedUrl": "/feed/signal-and-noise.xml",
+   "episodes": []
+  }
+ ]
+}

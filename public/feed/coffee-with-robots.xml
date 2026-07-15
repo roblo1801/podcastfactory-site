@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coffee with Robots</title>
+    <link>https://github.com/roblo1801/podcastfactory-site</link>
+    <description>Every morning, two friendly robots catch you up on what the robots did yesterday — the day's AI news in plain English, no jargon, no homework required.</description>
+    <language>en-us</language>
+    <generator>AI Podcast Factory</generator>
+    <atom:link href="/feed/coffee-with-robots.xml" rel="self" type="application/rss+xml" />
+    <itunes:author>AI Podcast Factory</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>Coffee with Robots: GPT-5.6 Drops, the Super App Arrives, and a Dad Who Can't Code Makes Millions</title>
+      <description>Harper and Liam pour the coffee and dig into OpenAI's massive GPT-5.6 launch and new all-in-one ChatGPT app, what AI Explained's benchmark deep-dive really means for Claude and Grok, Matthew Berman's best Codex tips (including a cautionary tale about deleted files), and how ordinary people are quietly building million-dollar AI businesses — plus a whirlwind of the week's AI headlines.</description>
+      <guid isPermaLink="false">podcastfactory-ep-12</guid>
+      <pubDate>Wed, 15 Jul 2026 15:43:02 GMT</pubDate>
+      <enclosure url="https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-12.mp3" type="audio/mpeg" />
+      <itunes:duration>00:15:52</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
