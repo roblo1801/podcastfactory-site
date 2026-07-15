@@ -1,64 +1,140 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect, useState } from "react";
+
+type Episode = {
+  id: number;
+  title: string;
+  description: string;
+  audioUrl: string;
+  durationSec: number | null;
+  publishedAt: string;
+};
+
+type Show = {
+  slug: string;
+  title: string;
+  description: string;
+  format: string;
+  feedUrl: string;
+  episodes: Episode[];
+};
+
+type SiteData = { generatedAt: string; shows: Show[] };
+
+const DATA_BASE = (process.env.NEXT_PUBLIC_DATA_BASE ?? "").replace(/\/$/, "");
+
+function fmtDuration(sec: number | null) {
+  if (!sec) return "";
+  const m = Math.floor(sec / 60);
+  return `${m} min`;
+}
+
+function fmtDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+}
+
+function Mug() {
+  return (
+    <span className="relative inline-block mr-3 align-baseline" aria-hidden>
+      <span className="steam absolute -top-3 left-1.5 w-1 h-2.5 rounded-full bg-espresso-dim/50" />
+      <span className="steam-2 absolute -top-3 left-3.5 w-1 h-2.5 rounded-full bg-espresso-dim/50" />
+      <span className="inline-block w-6 h-5 rounded-b-xl rounded-t-sm bg-crema relative">
+        <span className="absolute -right-2 top-0.5 w-2.5 h-3 border-[3px] border-crema rounded-r-full" />
+      </span>
+    </span>
+  );
+}
 
 export default function Home() {
+  const [data, setData] = useState<SiteData | null>(null);
+  const [error, setError] = useState("");
+  const [copied, setCopied] = useState("");
+
+  useEffect(() => {
+    if (!DATA_BASE) {
+      setError("Site not configured yet (NEXT_PUBLIC_DATA_BASE is unset).");
+      return;
+    }
+    fetch(`${DATA_BASE}/data/site.json`, { cache: "no-store" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then(setData)
+      .catch(() => setError("Couldn't load episodes right now — try refreshing in a minute."));
+  }, []);
+
+  const showsWithEpisodes = data?.shows.filter((s) => s.episodes.length > 0) ?? [];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen">
+      <main className="max-w-3xl mx-auto px-6 pb-24">
+        {/* Masthead */}
+        <header className="pt-16 pb-10 rise">
+          <h1 className="font-display italic font-semibold text-5xl sm:text-6xl tracking-tight leading-none">
+            <Mug />
+            Coffee with Robots
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-4 text-lg text-espresso-dim max-w-xl leading-relaxed">
+            Every morning, two friendly robots catch you up on what the robots did yesterday — the
+            day&apos;s AI news in plain English. No jargon, no homework.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </header>
+
+        {error && (
+          <p className="rounded-xl border border-crema/40 bg-paper-2 p-4 text-espresso-dim">{error}</p>
+        )}
+        {!data && !error && <p className="text-espresso-dim">Brewing…</p>}
+
+        {showsWithEpisodes.map((show, si) => (
+          <section key={show.slug} className="rise" style={{ animationDelay: `${si * 0.1}s` }}>
+            {showsWithEpisodes.length > 1 && (
+              <h2 className="font-display italic font-medium text-3xl mt-12 mb-1">{show.title}</h2>
+            )}
+            <div className="flex items-center gap-3 mt-2 mb-6">
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(show.feedUrl);
+                  setCopied(show.slug);
+                  setTimeout(() => setCopied(""), 1500);
+                }}
+                className="text-sm font-medium px-4 py-2 rounded-full bg-espresso text-paper hover:bg-crema-deep transition-colors"
+              >
+                {copied === show.slug ? "Copied!" : "☕ Copy RSS — subscribe in any podcast app"}
+              </button>
+            </div>
+
+            <div className="space-y-5">
+              {show.episodes.map((e, i) => (
+                <article
+                  key={e.id}
+                  className="rise rounded-2xl border border-espresso/10 bg-white/50 p-5 shadow-[0_2px_12px_rgba(59,42,30,0.05)]"
+                  style={{ animationDelay: `${0.15 + i * 0.06}s` }}
+                >
+                  <div className="flex items-baseline justify-between gap-4">
+                    <h3 className="font-display font-semibold text-xl leading-snug">{e.title}</h3>
+                    <span className="shrink-0 text-xs text-espresso-dim whitespace-nowrap">
+                      {fmtDate(e.publishedAt)} · {fmtDuration(e.durationSec)}
+                    </span>
+                  </div>
+                  <p className="mt-2 text-[15px] text-espresso-dim leading-relaxed">{e.description}</p>
+                  <div className="mt-4">
+                    <audio controls preload="none" src={e.audioUrl} />
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        {data && showsWithEpisodes.length === 0 && (
+          <p className="text-espresso-dim">First episodes are brewing — check back soon.</p>
+        )}
+
+        <footer className="mt-16 pt-6 border-t border-espresso/10 text-xs text-espresso-dim">
+          Hosted by AI, produced fresh daily. Made with the AI Podcast Factory.
+        </footer>
       </main>
     </div>
   );

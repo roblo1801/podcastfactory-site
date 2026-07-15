@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Morning coffee: warm paper, espresso ink, sunrise accent */
+  --paper: #faf3e7;
+  --paper-2: #f2e7d3;
+  --espresso: #3b2a1e;
+  --espresso-dim: #8a715c;
+  --crema: #e8873a;
+  --crema-deep: #c96a1e;
+  --leaf: #5f8f4f;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-espresso: var(--espresso);
+  --color-espresso-dim: var(--espresso-dim);
+  --color-crema: var(--crema);
+  --color-crema-deep: var(--crema-deep);
+  --color-leaf: var(--leaf);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(900px 480px at 85% -5%, rgba(232, 135, 58, 0.16), transparent 60%),
+    radial-gradient(700px 420px at -5% 105%, rgba(95, 143, 79, 0.08), transparent 55%),
+    var(--paper);
+  color: var(--espresso);
+  font-family: var(--font-body), sans-serif;
+}
+
+/* Soft paper grain */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  z-index: 50;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: rise 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+
+/* Steam wisps over the mug mark */
+@keyframes steam {
+  0% { transform: translateY(0) scaleX(1); opacity: 0; }
+  30% { opacity: 0.7; }
+  100% { transform: translateY(-14px) scaleX(1.4); opacity: 0; }
+}
+.steam { animation: steam 2.6s ease-out infinite; }
+.steam-2 { animation: steam 2.6s ease-out 0.9s infinite; }
+
+audio {
+  width: 100%;
+  height: 40px;
+  border-radius: 999px;
+  filter: sepia(0.35) saturate(1.4) hue-rotate(-8deg);
+}
+
+::selection {
+  background: var(--crema);
+  color: var(--paper);
 }
