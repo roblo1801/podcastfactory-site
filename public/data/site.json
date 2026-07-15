@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T16:20:19.271Z",
+ "generatedAt": "2026-07-15T16:20:29.663Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -15,6 +15,14 @@
      "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-12.mp3",
      "durationSec": 952,
      "publishedAt": "2026-07-15T15:43:02.000Z"
+    },
+    {
+     "id": 11,
+     "title": "Claude Comes Back, China Catches Up, and Everyone Wants Their Own Chip",
+     "description": "Anthropic's banned models return, SK Hynix pulls off the biggest Nasdaq debut ever, China's GLM-5.2 has everyone nervous, and Harper and Liam dig into the AI chip arms race, the NYT-OpenAI courtroom drama, and why an AI just found brain bleeds before doctors could.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-11.mp3",
+     "durationSec": 1022,
+     "publishedAt": "2026-07-15T13:34:20.000Z"
     }
    ]
   },
