@@ -7,8 +7,13 @@
     <language>en-us</language>
     <generator>AI Podcast Factory</generator>
     <atom:link href="https://main.dj1odb7ekedkr.amplifyapp.com/feed/signal-and-noise.xml" rel="self" type="application/rss+xml" />
-    <itunes:author>AI Podcast Factory</itunes:author>
+    <itunes:author>Signal and Noise</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology" />
+    <itunes:owner>
+      <itunes:name>Signal and Noise</itunes:name>
+      <itunes:email>roblo1801@gmail.com</itunes:email>
+    </itunes:owner>
 
   </channel>
 </rss>

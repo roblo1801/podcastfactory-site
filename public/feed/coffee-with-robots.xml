@@ -7,8 +7,13 @@
     <language>en-us</language>
     <generator>AI Podcast Factory</generator>
     <atom:link href="https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml" rel="self" type="application/rss+xml" />
-    <itunes:author>AI Podcast Factory</itunes:author>
+    <itunes:author>Coffee with Robots</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology" />
+    <itunes:owner>
+      <itunes:name>Coffee with Robots</itunes:name>
+      <itunes:email>roblo1801@gmail.com</itunes:email>
+    </itunes:owner>
     <itunes:image href="https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg" />
     <image>
       <url>https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg</url>
