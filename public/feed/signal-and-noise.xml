@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Signal and Noise</title>
-    <link>https://github.com/roblo1801/podcastfactory-site</link>
+    <link>https://main.dj1odb7ekedkr.amplifyapp.com</link>
     <description>Two AI hosts unpack one interesting thing from the internet each episode.</description>
     <language>en-us</language>
     <generator>AI Podcast Factory</generator>
-    <atom:link href="/feed/signal-and-noise.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://main.dj1odb7ekedkr.amplifyapp.com/feed/signal-and-noise.xml" rel="self" type="application/rss+xml" />
     <itunes:author>AI Podcast Factory</itunes:author>
     <itunes:explicit>false</itunes:explicit>
 

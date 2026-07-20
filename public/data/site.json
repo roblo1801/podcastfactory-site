@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-07-15T16:20:29.663Z",
+ "generatedAt": "2026-07-20T12:49:55.743Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
    "title": "Coffee with Robots",
    "description": "Every morning, two friendly robots catch you up on what the robots did yesterday — the day's AI news in plain English, no jargon, no homework required.",
    "format": "dialogue",
-   "feedUrl": "/feed/coffee-with-robots.xml",
+   "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "episodes": [
     {
      "id": 12,
@@ -31,7 +31,7 @@
    "title": "Signal and Noise",
    "description": "Two AI hosts unpack one interesting thing from the internet each episode.",
    "format": "dialogue",
-   "feedUrl": "/feed/signal-and-noise.xml",
+   "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/signal-and-noise.xml",
    "episodes": []
   }
  ]
