@@ -22,6 +22,8 @@ type Show = {
 
 type SiteData = { generatedAt: string; shows: Show[] };
 
+// Episode data is committed into this site's own public/ dir, so same-origin
+// by default; NEXT_PUBLIC_DATA_BASE only overrides for local dev against prod data.
 const DATA_BASE = (process.env.NEXT_PUBLIC_DATA_BASE ?? "").replace(/\/$/, "");
 
 function fmtDuration(sec: number | null) {
@@ -52,10 +54,6 @@ export default function Home() {
   const [copied, setCopied] = useState("");
 
   useEffect(() => {
-    if (!DATA_BASE) {
-      setError("Site not configured yet (NEXT_PUBLIC_DATA_BASE is unset).");
-      return;
-    }
     fetch(`${DATA_BASE}/data/site.json`, { cache: "no-store" })
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);

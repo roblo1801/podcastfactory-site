@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Fully static site — episode data is fetched client-side from S3,
-  // so publishing new episodes never requires a redeploy.
-  output: "export",
+  // Standard Next build — Amplify hosts this as a WEB_COMPUTE app.
+  // Episode data lives in public/ and is fetched client-side, so new
+  // episodes only need the factory's publish commit, not a code change.
 };
 
 export default nextConfig;
