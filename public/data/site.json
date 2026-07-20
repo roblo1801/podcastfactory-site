@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T13:27:00.128Z",
+ "generatedAt": "2026-07-20T14:24:37.732Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 13,
+     "title": "Kimi Steals the Spotlight (And Your Spotify Reads Your Diary)",
+     "description": "A Chinese open-weight model called Kimi K-Three stuns the AI world by out-designing Claude, OpenAI answers with a cheaper Soul, and Harper and Liam sort through smart glasses, talking Spotify, and an AI that spots brain bleeds before doctors can.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-13.mp3",
+     "durationSec": 880,
+     "publishedAt": "2026-07-20T14:24:28.000Z"
+    },
     {
      "id": 12,
      "title": "Coffee with Robots: GPT-5.6 Drops, the Super App Arrives, and a Dad Who Can't Code Makes Millions",
