@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Coffee with Robots",
   description:
     "Every morning, two friendly robots catch you up on what the robots did yesterday — the day's AI news in plain English.",
+  openGraph: {
+    title: "Coffee with Robots",
+    description: "The day's AI news in plain English — every morning, over coffee.",
+    images: ["/covers/coffee-with-robots-web.jpg"],
+  },
 };
 
 export default function RootLayout({

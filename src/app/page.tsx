@@ -17,6 +17,7 @@ type Show = {
   description: string;
   format: string;
   feedUrl: string;
+  coverUrl?: string | null;
   episodes: Episode[];
 };
 
@@ -69,15 +70,23 @@ export default function Home() {
     <div className="min-h-screen">
       <main className="max-w-3xl mx-auto px-6 pb-24">
         {/* Masthead */}
-        <header className="pt-16 pb-10 rise">
-          <h1 className="font-display italic font-semibold text-5xl sm:text-6xl tracking-tight leading-none">
-            <Mug />
-            Coffee with Robots
-          </h1>
-          <p className="mt-4 text-lg text-espresso-dim max-w-xl leading-relaxed">
-            Every morning, two friendly robots catch you up on what the robots did yesterday — the
-            day&apos;s AI news in plain English. No jargon, no homework.
-          </p>
+        <header className="pt-16 pb-10 rise flex flex-col sm:flex-row items-start sm:items-center gap-8">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/covers/coffee-with-robots-web.jpg"
+            alt="Coffee with Robots cover art — two robots sharing coffee at a café table"
+            className="w-40 h-40 sm:w-44 sm:h-44 rounded-3xl shadow-[0_10px_30px_rgba(59,42,30,0.25)] rotate-[-2deg] shrink-0"
+          />
+          <div>
+            <h1 className="font-display italic font-semibold text-5xl sm:text-6xl tracking-tight leading-none">
+              <Mug />
+              Coffee with Robots
+            </h1>
+            <p className="mt-4 text-lg text-espresso-dim max-w-xl leading-relaxed">
+              Every morning, two friendly robots catch you up on what the robots did yesterday — the
+              day&apos;s AI news in plain English. No jargon, no homework.
+            </p>
+          </div>
         </header>
 
         {error && (
