@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T14:24:37.732Z",
+ "generatedAt": "2026-07-21T15:05:04.691Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 14,
+     "title": "The Chatbot That Ate Everything (And the One the Government Grounded)",
+     "description": "Harper and Liam sip their coffee through a week where ChatGPT swallowed four apps whole, the government benched Anthropic's smartest model for three weeks, and a scrappy Chinese startup showed up looking suspiciously good. Plus: smart glasses, a giant chip IPO, and why quotas are suddenly a blood sport.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-14.mp3",
+     "durationSec": 892,
+     "publishedAt": "2026-07-21T15:04:53.000Z"
+    },
     {
      "id": 13,
      "title": "Kimi Steals the Spotlight (And Your Spotify Reads Your Diary)",
