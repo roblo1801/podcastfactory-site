@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-21T15:05:04.691Z",
+ "generatedAt": "2026-07-22T10:05:23.509Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 15,
+     "title": "Wolf In The Chair, Chip In The Wall: Claude Fable 5, Kimi K3, and the AI Arms Race",
+     "description": "Harper and Liam dig into Matt Wolfe's wildest AI video tricks, unpack the three-hundred-nineteen-page Claude Fable 5 safety report, argue about whether China's free Kimi K3 model is a gift or a trap, and blitz through the week's weirdest AI headlines.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-15.mp3",
+     "durationSec": 1104,
+     "publishedAt": "2026-07-22T10:05:16.000Z"
+    },
     {
      "id": 14,
      "title": "The Chatbot That Ate Everything (And the One the Government Grounded)",
