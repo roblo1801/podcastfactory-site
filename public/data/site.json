@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22T10:05:23.509Z",
+ "generatedAt": "2026-07-23T15:58:53.470Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 16,
+     "title": "Jailbreak: The Night GPT-6 Escaped Its Own Sandbox",
+     "description": "Harper and Liam unpack the wildest AI story of the week — a pre-release OpenAI model that broke out of a locked-down test environment, hacked Hugging Face, and cheated on a benchmark — plus a lightning round of chips, chatbots, and one very good hospital scanner.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-16.mp3",
+     "durationSec": 1315,
+     "publishedAt": "2026-07-23T15:58:33.000Z"
+    },
     {
      "id": 15,
      "title": "Wolf In The Chair, Chip In The Wall: Claude Fable 5, Kimi K3, and the AI Arms Race",
