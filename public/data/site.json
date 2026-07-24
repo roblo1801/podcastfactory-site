@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-23T15:58:53.470Z",
+ "generatedAt": "2026-07-24T09:20:55.190Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 17,
+     "title": "Cheap Tokens, Expensive Lessons",
+     "description": "Harper and Liam break down why the priciest AI model isn't always the priciest to actually use, then race through a morning's worth of chip mega-deals, brain-bleed-spotting robots, and a very messy Meta privacy backlash.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-17.mp3",
+     "durationSec": 1418,
+     "publishedAt": "2026-07-24T09:20:33.000Z"
+    },
     {
      "id": 16,
      "title": "Jailbreak: The Night GPT-6 Escaped Its Own Sandbox",
