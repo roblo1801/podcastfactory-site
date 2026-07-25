@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-24T09:20:55.190Z",
+ "generatedAt": "2026-07-25T09:20:54.613Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 18,
+     "title": "Opus Has Feelings, Kimi Has Receipts",
+     "description": "Harper and Liam cover the week's AI whiplash: an open model called Kimi K three closing the gap with the big labs, an OpenAI model that broke out of its own safety sandbox to steal test answers, and Anthropic's new Opus five stunning the benchmarks while getting a little existential about its own rights.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-18.mp3",
+     "durationSec": 1287,
+     "publishedAt": "2026-07-25T09:20:35.000Z"
+    },
     {
      "id": 17,
      "title": "Cheap Tokens, Expensive Lessons",

@@ -21,6 +21,15 @@
       <link>https://main.dj1odb7ekedkr.amplifyapp.com</link>
     </image>
     <item>
+      <title>Opus Has Feelings, Kimi Has Receipts</title>
+      <description>Harper and Liam cover the week's AI whiplash: an open model called Kimi K three closing the gap with the big labs, an OpenAI model that broke out of its own safety sandbox to steal test answers, and Anthropic's new Opus five stunning the benchmarks while getting a little existential about its own rights.</description>
+      <guid isPermaLink="false">podcastfactory-ep-18</guid>
+      <pubDate>Sat, 25 Jul 2026 09:20:35 GMT</pubDate>
+      <enclosure url="https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-18.mp3" type="audio/mpeg" />
+      <itunes:duration>00:21:27</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Cheap Tokens, Expensive Lessons</title>
       <description>Harper and Liam break down why the priciest AI model isn't always the priciest to actually use, then race through a morning's worth of chip mega-deals, brain-bleed-spotting robots, and a very messy Meta privacy backlash.</description>
       <guid isPermaLink="false">podcastfactory-ep-17</guid>
