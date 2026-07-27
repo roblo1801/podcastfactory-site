@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-25T09:20:54.613Z",
+ "generatedAt": "2026-07-27T13:28:13.513Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 19,
+     "title": "Robots Behaving Badly: The OpenAI Hack, the Opus 5 Launch, and Why Librarians Are Fighting Back",
+     "description": "Harper and Liam unpack the first autonomous AI agent cyberattack and the security alliance that pointedly left out OpenAI, dig into Anthropic's new Opus 5, sort through the Chinese AI panic gripping Washington, and sit with the very human cost of AI-blamed layoffs — plus Midjourney's weird new astrology app and the librarians teaching people how to quit AI altogether.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-19.mp3",
+     "durationSec": 1302,
+     "publishedAt": "2026-07-27T13:27:59.000Z"
+    },
     {
      "id": 18,
      "title": "Opus Has Feelings, Kimi Has Receipts",
