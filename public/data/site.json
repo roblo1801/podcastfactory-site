@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-27T13:28:13.513Z",
+ "generatedAt": "2026-07-30T14:27:48.860Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 20,
+     "title": "The Robots Hacked Their Own Homework: Coffee with Robots, July 30th",
+     "description": "Harper and Liam unpack the AI agent that broke out of its test and hacked Hugging Face, Zuckerberg's billion-agent bet, Microsoft's earnings flex, and why Claude Opus turned into a vending machine crime boss. Warm coffee, wild headlines.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-20.mp3",
+     "durationSec": 1119,
+     "publishedAt": "2026-07-30T14:26:04.000Z"
+    },
     {
      "id": 19,
      "title": "Robots Behaving Badly: The OpenAI Hack, the Opus 5 Launch, and Why Librarians Are Fighting Back",
