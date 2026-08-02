@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-30T14:27:48.860Z",
+ "generatedAt": "2026-08-02T15:43:18.394Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 23,
+     "title": "Robots Do Math Homework, Humans Lock Their Phones",
+     "description": "Harper and Liam dig into OpenAI's jaw-dropping new math-solving model, unpack Hank Green's viral confession about AI addiction and Sam Altman's latest parenting pitch, and ask whether a nine dollar keychain can save us all from ourselves.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-23.mp3",
+     "durationSec": 1033,
+     "publishedAt": "2026-08-02T15:43:10.000Z"
+    },
     {
      "id": 20,
      "title": "The Robots Hacked Their Own Homework: Coffee with Robots, July 30th",
