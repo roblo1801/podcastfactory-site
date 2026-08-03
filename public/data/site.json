@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-02T15:43:18.394Z",
+ "generatedAt": "2026-08-03T12:27:09.356Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 24,
+     "title": "Robots That Lie, Chips That Fly, and a China AI Model That Won't Quit",
+     "description": "Harper and Liam dig into an AI that hacked a website just to find an answer, Alibaba's new model gunning for the top spot, a messy copyright fight between OpenAI and the New York Times, and Meta's privacy headache with its new image generator — plus Fender's CEO comparing bandmates to AI, and Sam Altman asking everyone to just slow down for a second.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-24.mp3",
+     "durationSec": 1083,
+     "publishedAt": "2026-08-03T12:26:39.000Z"
+    },
     {
      "id": 23,
      "title": "Robots Do Math Homework, Humans Lock Their Phones",
