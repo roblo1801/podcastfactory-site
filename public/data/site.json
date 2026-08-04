@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-03T12:27:09.356Z",
+ "generatedAt": "2026-08-04T11:31:11.300Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 25,
+     "title": "The Qwen Heard Round the World",
+     "description": "Harper and Liam dig into Alibaba's giant new open-source model Qwen 3.8 Max, Palantir's very profitable CEO calling the AI industry 'Marxist,' and why a finally-fixed Siri somehow feels like old news.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-25.mp3",
+     "durationSec": 1054,
+     "publishedAt": "2026-08-04T11:30:51.000Z"
+    },
     {
      "id": 24,
      "title": "Robots That Lie, Chips That Fly, and a China AI Model That Won't Quit",
