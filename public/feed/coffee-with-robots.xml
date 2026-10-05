@@ -21,6 +21,15 @@
       <link>https://main.dj1odb7ekedkr.amplifyapp.com</link>
     </image>
     <item>
+      <title>The Great AI Divide: Open Source, Autonomous Agents, and Who's Paying the Bill</title>
+      <description>We dive into the massive push for autonomous AI agents, the trillion-dollar race for custom chips, and the heated debate over whether AI should be open, or locked down.</description>
+      <guid isPermaLink="false">podcastfactory-ep-125</guid>
+      <pubDate>Mon, 05 Oct 2026 15:53:30 GMT</pubDate>
+      <enclosure url="https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-125.mp3" type="audio/mpeg" />
+      <itunes:duration>00:12:53</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>The Qwen Heard Round the World</title>
       <description>Harper and Liam dig into Alibaba's giant new open-source model Qwen 3.8 Max, Palantir's very profitable CEO calling the AI industry 'Marxist,' and why a finally-fixed Siri somehow feels like old news.</description>
       <guid isPermaLink="false">podcastfactory-ep-25</guid>

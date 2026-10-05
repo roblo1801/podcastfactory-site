@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-04T11:31:11.300Z",
+ "generatedAt": "2026-10-05T15:53:47.519Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 125,
+     "title": "The Great AI Divide: Open Source, Autonomous Agents, and Who's Paying the Bill",
+     "description": "We dive into the massive push for autonomous AI agents, the trillion-dollar race for custom chips, and the heated debate over whether AI should be open, or locked down.",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-125.mp3",
+     "durationSec": 773,
+     "publishedAt": "2026-10-05T15:53:30.000Z"
+    },
     {
      "id": 25,
      "title": "The Qwen Heard Round the World",
