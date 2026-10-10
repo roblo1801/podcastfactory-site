@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-05T15:53:47.519Z",
+ "generatedAt": "2026-10-10T23:06:59.809Z",
  "shows": [
   {
    "slug": "coffee-with-robots",
@@ -9,6 +9,14 @@
    "feedUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/feed/coffee-with-robots.xml",
    "coverUrl": "https://main.dj1odb7ekedkr.amplifyapp.com/covers/coffee-with-robots.jpg",
    "episodes": [
+    {
+     "id": 169,
+     "title": "Did the Robots Write a Fake Crime Tip? Analyzing AI's Wild Ride",
+     "description": "We dive into the major AI breakthroughs, the shocking ethical fails, and the trillion-dollar races happening in data centers and drug discovery. Is AI ready for the real world?",
+     "audioUrl": "https://github.com/roblo1801/podcastfactory-site/releases/download/episodes/ep-169.mp3",
+     "durationSec": 904,
+     "publishedAt": "2026-10-10T23:06:43.000Z"
+    },
     {
      "id": 125,
      "title": "The Great AI Divide: Open Source, Autonomous Agents, and Who's Paying the Bill",
